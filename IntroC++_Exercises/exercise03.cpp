@@ -1,7 +1,8 @@
 // =================================================================
 //
 // File: exercise03.cpp
-// Author(s):
+// Author(s):	Javier Suarez Duran - A01707380
+//				Daniel Rodríguez Figueroa - A01612889
 // Description: This file contains the code that implements the
 //				enumeration sort algorithm. The time this implementation
 //				takes will be used as the basis to calculate the

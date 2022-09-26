@@ -1,7 +1,8 @@
 // =================================================================
 //
 // File: exercise04.cpp
-// Author(s):
+// Author(s):	Javier Suarez Duran - A01707380
+//				Daniel Rodríguez Figueroa - A01612889
 // Description: This file implements the PI approximation using the
 //				series proposed by Euler.
 //				pi = sqrt ( 6 * sumatoria(i = 1-N) (1 / i^2) )

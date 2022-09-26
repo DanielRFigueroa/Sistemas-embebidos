@@ -1,7 +1,8 @@
 // =================================================================
 //
 // File: exercise02.cpp
-// Author(s):
+// Author(s):	Javier Suarez Duran - A01707380
+//				Daniel Rodríguez Figueroa - A01612889
 // Description: This file contains the code that performs the sum of
 //				all prime numbers less than or equal to MAXIMUM. The 
 //				time this implementation takes will be used as the 
