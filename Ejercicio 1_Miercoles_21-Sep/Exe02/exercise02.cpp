@@ -25,20 +25,23 @@
 
 using namespace std;
 
+bool fact(int a){
+	int f = 1;
+	for(int i = 1; i <= a; i++){
+		f = f*i;
+		
+	}
+	return f;
+
+}
+
 bool comp(int a){
-	int i;
-	
-	if(a < 2){
-		return false;
+	float pi = 3.14159265358979323846;
+	if(floor(pow(cos(pi*((fact(a-1)+1)/a)),2)) == 1){
+		return 1;
 		
 	}
-	for(i = 2; i < sqrt(a); i++){
-		if(a % i == 0){
-			return false;
-		
-		}
-	}
-	return true;
+	return 0;
 	
 }
 

@@ -22,10 +22,34 @@ const int SIZE = 10000; //1e4
 
 using namespace std;
 
+void swap(int *a, int i, int j) {
+  int aux = a[i];
+  a[i] = a[j];
+  a[j] = aux;
+  
+}
 
+int* enumSort(int *a, int size) {
+	int *b = new int[size];
+
+	memcpy(b, a, sizeof(int) * SIZE);
+
+	for(int i = size - 1; i > 0; i --){
+		for(int j = 0; j < i; j ++){
+			if ((b[i] < b[j]) || ((b[i] == b[j]) && (i < j))) {
+				swap(b, j, i);
+				
+			}
+			
+		}
+		
+	} 
+	return b;
+	
+}
 
 int main(int argc, char* argv[]) {
-	int *a;
+	int *a, *b;
 	double ms;
 
 	a = new int[SIZE];
@@ -34,14 +58,15 @@ int main(int argc, char* argv[]) {
 
 	cout << "Starting..." << endl;
 	ms = 0;
-	// create object here
-	for (int i = 0; i < N; i++) {
+	
+	for(int i = 0; i < N; i++){
 		start_timer();
 
-		// call your code here.
+		b = enumSort(a, SIZE);
 
 		ms += stop_timer();
 	}
+	
 	display_array("after", b);
 	cout << "avg time = " << setprecision(5) << (ms / N) << " ms" << endl;
 
